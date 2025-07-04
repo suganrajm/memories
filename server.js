@@ -25,3 +25,5 @@ app.get('/api/memories', (req, res) => {
 });
 
 app.listen(5000, () => console.log("Server running on http://localhost:5000"));
+app.use(cors());
+
