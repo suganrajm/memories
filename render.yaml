@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: memories-diary-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DB_USER
+        value: root
+      - key: DB_PASS
+        sync: false
+      - key: DB_NAME
+        value: memories_db
